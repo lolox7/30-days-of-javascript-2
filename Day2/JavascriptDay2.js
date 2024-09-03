@@ -69,17 +69,15 @@ console.log(" The quote 'There is no exercise better for the heart than reaching
 console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.")
 // Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
 
-// ne marche pas pour une raison inconnue
-// let stringTen = '10'
-// let ten = 10 ;
+let stringTen = '10'
+let ten = 10 ;
 
-// console.log(typeof stringTen);
-// let tenInt = 10;
-// console.log(typeof ten == ten)
-
-
+console.log(typeof stringTen);
+let tenInt = 10;
+console.log(typeof (ten) === typeof (parseInt(stringTen)))
 
 // Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+console.log(parseFloat(Math.round(9.8)) == 10)
 
 // Check if 'on' is found in both python and jargon
 let python = "python", jargon = "jargon"
