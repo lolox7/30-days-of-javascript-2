@@ -39,60 +39,68 @@ let mixedDataTypes = ['pompelo', 3, true , Number,-5 , 'lomepal']
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 let itCompanies =  [ "Facebook", 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 // Print the array using console.log()
-console.log(itCompanies)
+// console.log(itCompanies)
 // Print the number of companies in the array
-console.log(itCompanies.length)
+// console.log(itCompanies.length)
 // Print the first company, middle and last company
-let middleIt = itCompanies.length/2
-console.log(itCompanies[0] + ' ' + itCompanies[parseInt(middleIt)] + ' ' + itCompanies[itCompanies.length - 1])
+// let middleIt = itCompanies.length/2
+// console.log(itCompanies[0] + ' ' + itCompanies[parseInt(middleIt)] + ' ' + itCompanies[itCompanies.length - 1])
 // Print out each company
-for (i = 0 ; i < itCompanies.length; i++) {
-    console.log(itCompanies[i])
-    }
+// for (i = 0 ; i < itCompanies.length; i++) {
+//     console.log(itCompanies[i])
+//     }
 // Change each company name to uppercase one by one and print them out
-let itUppercase = []
-for (i = 0 ; i < itCompanies.length; i++) {
-    (itUppercase[i] = itCompanies[i].toUpperCase())
-    }
-console.log(itUppercase)
+// let itUppercase = []
+// for (i = 0 ; i < itCompanies.length; i++) {
+//     (itUppercase[i] = itCompanies[i].toUpperCase())
+//     }
+// console.log(itUppercase)
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
-console.log(    
-    itCompanies[0] + ', ' +itCompanies[1] + ', ' +itCompanies[2] + ', ' +
-    itCompanies[3] + ', ' +itCompanies[4]+ ', ' +itCompanies[5] + ', ' +
-    itCompanies[6] + ' are big IT compagnies')
+// console.log(    
+//     itCompanies[0] + ', ' +itCompanies[1] + ', ' +itCompanies[2] + ', ' +
+//     itCompanies[3] + ', ' +itCompanies[4]+ ', ' +itCompanies[5] + ', ' +
+//     itCompanies[6] + ' are big IT compagnies')
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-if (itCompanies.includes('Facebook')) {
-    console.log('Facebook is in the array')
-}   else {
-    console.log('Facebook is not in the array')
-}
+// if (itCompanies.includes('Facebook')) {
+//     console.log('Facebook is in the array')
+// }   else {
+//     console.log('Facebook is not in the array')
+// }
 // Filter out companies which have more than one 'o' without the filter method
-let oCounter = 0, charCounter = 0
-for (i = 0 ; i < itCompanies.length; i++) {
-    oCounter = 0
-    while (itCompanies[i].charAt(charCounter) < itCompanies[i].length) {
-        
-        if (itCompanies.charAt(charCounter) === 'o') {
-            charCounter++ , oCounter++
-        } else { 
-            charCounter++ 
-        }
-    }
-    if (oCounter > 1 ) {
-        console.log(itCompanies[i])
-    }   else {
-                
-    }
-}
+// let oCounter = 0, charCounter = 0
+// for (i = 0 ; i < itCompanies.length; i++) {
+//     oCounter = 0
+//     for (charCounter = 0; charCounter < itCompanies[i].length; charCounter++ ){
+//         if (itCompanies[i].charAt(charCounter) === 'o'){
+//             oCounter++            
+//         }
+//     }
+//     if (oCounter >= 2) { 
+//         console.log(itCompanies[i])
+//     }    
+// }
 // Sort the array using sort() method
+// console.log(webTechs.sort())
 // Reverse the array using reverse() method
+// console.log(webTechs.reverse())
 // Slice out the first 3 companies from the array
+console.log(webTechs.slice(0,3))
 // Slice out the last 3 companies from the array
+console.log(webTechs.slice(webTechs.length - 3 , webTechs.length))
+
 // Slice out the middle IT company or companies from the array
+console.log(webTechs[parseInt(webTechs.length / 2)])
 // Remove the first IT company from the array
+webTechs.shift()
+console.log(webTechs)
+
 // Remove the middle IT company or companies from the array
+
+console.log
 // Remove the last IT company from the array
+
 // Remove all IT companies
+
 // Exercise: Level 2
 // Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
 
