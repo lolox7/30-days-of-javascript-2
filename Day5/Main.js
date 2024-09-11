@@ -1,28 +1,9 @@
 // 💻 Exercise
 // Exercise: Level 1
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
+import { webTechs } from './Webtechs.js';
+import { countries } from './Countries.js';
+// import { countries } from '/Countries.js'
 
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
 // Declare an empty array;
 let emptyArray = []
 // Declare an array with more than 5 number of elements
@@ -84,42 +65,72 @@ let itCompanies =  [ "Facebook", 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle'
 // Reverse the array using reverse() method
 // console.log(webTechs.reverse())
 // Slice out the first 3 companies from the array
-console.log(webTechs.slice(0,3))
+// console.log(webTechs.slice(0,3))
 // Slice out the last 3 companies from the array
-console.log(webTechs.slice(webTechs.length - 3 , webTechs.length))
+// console.log(webTechs.slice(webTechs.length - 3 , webTechs.length))
 
 // Slice out the middle IT company or companies from the array
-console.log(webTechs[parseInt(webTechs.length / 2)])
+// console.log(webTechs[parseInt(webTechs.length / 2)])
 // Remove the first IT company from the array
-webTechs.shift()
-console.log(webTechs)
-
+// webTechs.shift()
+// console.log(webTechs)
 // Remove the middle IT company or companies from the array
-
-console.log
+// webTechs.splice(2 , 2)
+// console.log(webTechs)
 // Remove the last IT company from the array
+// webTechs.pop()
+// console.log(webTechs)
 
 // Remove all IT companies
+// webTechs.splice(0 , webTechs.length)
+// console.log(webTechs)
 
 // Exercise: Level 2
 // Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
-
+// console.log(countries +' and '+ webTechs)
 // First remove all the punctuations and change the string to array and count the number of words in the array
 
-// let text =
-// 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+// let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+// text = text.replace(/\.|,/g,'')
+// console.log(text)
+// let words = text.split(' ')
 // console.log(words)
 // console.log(words.length)
 // ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
 
 // 13
+
 // In the following shopping cart add, remove, edit items
 
 // const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
 // add 'Meat' in the beginning of your shopping cart if it has not been already added
+// shoppingCart.unshift('Meat')
+// console.log(shoppingCart)
 // add Sugar at the end of you shopping cart if it has not been already added
+// shoppingCart.push('Sugar')
+// console.log(shoppingCart)
 // remove 'Honey' if you are allergic to honey
+// let honeyPlace , i
+
+// for (i = 0; i < shoppingCart.length ;i++) {
+//   if (shoppingCart[i] === 'Honey'){
+//     honeyPlace = i
+//   }
+// }
+// shoppingCart.splice(honeyPlace , 1)
+// console.log(shoppingCart)
 // modify Tea to 'Green Tea'
+// let teaPlace
+
+// for (i = 0; i < shoppingCart.length ;i++) {
+//   if (shoppingCart[i] === 'Tea'){
+//     teaPlace = i
+//   }
+// }
+// console.log(teaPlace)
+// shoppingCart[teaPlace] = 'Green Tea'
+// console.log(shoppingCart)
 // In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 
 // In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
