@@ -131,28 +131,70 @@ let itCompanies =  [ "Facebook", 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle'
 // console.log(teaPlace)
 // shoppingCart[teaPlace] = 'Green Tea'
 // console.log(shoppingCart)
-// In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 
+
+// In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+// console.log(countries.includes('Ethiopia'))
 // In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
 
+// if (webTechs.includes('Sass')) {
+//     console.log('Sass is a css Preprocess')
+// }   else {
+//     webTechs.push('Sass')
+//     console.log(webTechs)
+// }
 // Concatenate the following two variables and store it in a fullStack variable.
 
 // const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 // const backEnd = ['Node','Express', 'MongoDB']
 
+// let fullStack = frontEnd.concat(backEnd)
 // console.log(fullStack)
 // ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 // Exercise: Level 3
 // The following is an array of 10 students ages:
 
-// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
 // Sort the array and find the min and max age
+console.log(ages)
+
+let minAge = ages[0] , maxAge = ages[0],j
+for (j = 0 ; j < ages.length ; j++) {
+    if (ages[j] >= maxAge) {
+        maxAge = ages[j]
+    }
+
+    if (ages[j] <= minAge) {
+        minAge = ages[j]
+    }
+}
+console.log(maxAge + ' ' + minAge)
+
 // Find the median age(one middle item or two middle items divided by two)
+
 // Find the average age(all items divided by number of items)
+let ageSum = 0, i
+for (i = 0 ; i < ages.length ; i++) {
+    ageSum = ageSum + ages[i]
+}
+let averageAge = (ageSum / ages.length) 
+// console.log('the average Age amongst the students is ' + averageAge)
 // Find the range of the ages(max minus min)
-// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+console.log(minAge)
+console.log ('the range of the ages is equal to ' + (maxAge - minAge))
+// Compare the value of (min - average) and (max - average), use abs() method 
+console.log('the diffference betwenn minimal value and average is ' +  (-1 *(parseInt((minAge - averageAge)*10))/10) +
+' and the difference between maximal value and average age is ' + 0.1*parseInt((maxAge - averageAge)*10 + " so the the average is farther away from the minimaal age tha from the maximal age")
+)
+//1.Slice the first ten countries from the countries array
+console.log(countries.slice(0,10))
 // Find the middle country(ies) in the countries array
-
+console.log(countries[parseInt((countries.length / 2)-1)] +" and "+countries[parseInt((countries.length / 2))])
 // Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
-
+if (countries.length / 2 !== parseInt(countries.length/2)) {
+    let firstPart = countries.splice(0,5)
+    let secondPart = countries.slice(0,5)
+    console.log(firstPart + secondPart)
+}
 // 🎉 CONGRATULATIONS ! 🎉
